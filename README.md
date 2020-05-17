@@ -19,3 +19,6 @@ python -m pip -r requirements.txt
 ```
 python manage.py runserver
 ```
+
+## secure password generation
+> [generate password in python(randomly)](https://pynative.com/python-generate-random-string/)
