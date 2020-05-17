@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Password Generator Home</title>
+</head>
+<body>
+    <div>
+        <h2>Generate Password</h2>
+        <form action="{% url 'generate_password' %}">
+            <label for="length">Length of Password:</label>
+            <input type="number" name="length" min="8" max="20"><br> 
+            <label for="lowercase"> Lowercase</label>
+            <input type="checkbox"  name="lowercase"><br>
+            <label for="lowercase"> Uppercase</label>
+            <input type="checkbox" name="uppercase"><br>
+            <label for="numbers"> Numbers</label>
+            <input type="checkbox" name="number"><br>
+            <label for="lowercase"> Special Characters</label>
+            <input type="checkbox"  name="special_character"><br>
+            <input type="submit" value="Generate">
+          </form>
+    </div>
+</body>
+</html>
